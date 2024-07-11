@@ -240,9 +240,13 @@ GEM
 
 PLATFORMS
   ruby
+  universal-darwin-22
+  x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
+  fastlane
 
 BUNDLED WITH
    2.0.1
