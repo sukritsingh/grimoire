@@ -7,7 +7,7 @@ baseurl: /grimoire # the subpath of your site, e.g. /blog/
 url: sukritsingh.github.io # the base hostname & protocol for your site
 source-url: https://github.com/sukritsingh/grimoire/
 permalink: "/:categories/:title"
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vendor']
 
 # Build settings
 markdown: kramdown
