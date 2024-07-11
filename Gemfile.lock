@@ -246,7 +246,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  fastlane
 
 BUNDLED WITH
    2.0.1
