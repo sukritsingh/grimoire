@@ -2,11 +2,9 @@
 
 Grimoire is a mobile-friendly d20 SRD 5e spellbook that organizes spell lists by class and level.
 
-See the latest compiled build here: [http://ephe.github.io/grimoire/](http://ephe.github.io/grimoire/)
+See the latest compiled build here: [http://sukritsingh.github.io/grimoire/](http://sukritsingh.github.io/grimoire/)
 
-It's been a while. The Grimoire has been pruned to display only the spells from the d20 5e SRD to provide a hopefully entertaining example of how to use Jekyll to do something weird. Unless you've got typos or bugs to file, please consider this project frozen.
-
-Thank you all for your help over the years! May your games ever be fun and your rolls to your liking :)
+The Grimoire has been pruned to display only the spells from the d20 5e SRD to provide a hopefully entertaining example of how to use Jekyll to do something weird. Unless you've got typos or bugs to file, please consider this project frozen.
 
 ## Structure
 

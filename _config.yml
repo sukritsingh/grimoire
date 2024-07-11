@@ -1,11 +1,11 @@
 # Site settings
 title: Grimoire
-author: Saph
+author: Sukrit Singh
 description:
   A searchable d20 5e spell list, sorted by class and level.
 baseurl: /grimoire # the subpath of your site, e.g. /blog/
-url: ephe.github.io # the base hostname & protocol for your site
-source-url: https://github.com/ephe/grimoire/
+url: sukritsingh.github.io # the base hostname & protocol for your site
+source-url: https://github.com/sukritsingh/grimoire/
 permalink: "/:categories/:title"
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 
