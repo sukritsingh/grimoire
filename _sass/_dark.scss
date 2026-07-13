@@ -1,0 +1,78 @@
+/**
+ * Dark theme overrides, applied when <html data-theme="dark">
+ * (set by the inline script in _includes/head.html).
+ */
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    body {
+        color: #ccc;
+        background-color: #121212;
+    }
+
+    a {
+        color: #6ab0d8;
+
+        &:visited {
+            color: #4d96b9;
+        }
+
+        &:hover {
+            color: #eee;
+        }
+    }
+
+    .site-header {
+        border-bottom-color: #333;
+    }
+
+    .site-title,
+    .site-title:visited,
+    .site-nav .page-link,
+    dl.tag-list dt,
+    dl.schools-list dd a,
+    .post-list-head,
+    .class-list .page-heading {
+        color: #bbb;
+    }
+
+    dl.schools-list dd a.selected {
+        color: #6ab0d8;
+    }
+
+    .site-nav {
+        background-color: #121212;
+
+        .page-link:not(:last-child) {
+            border-bottom-color: #333;
+        }
+    }
+
+    .menu-icon svg path {
+        fill: #bbb;
+    }
+
+    .site-footer {
+        border-top-color: #333;
+    }
+
+    #jetsSearch {
+        color: #ccc;
+        background-color: #1e1e1e;
+    }
+
+    blockquote {
+        color: #999;
+        border-left-color: #444;
+    }
+
+    pre,
+    code {
+        border-color: #444;
+        background-color: #1e1e28;
+    }
+
+    .post-meta {
+        color: #999;
+    }
+}
