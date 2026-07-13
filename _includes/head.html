@@ -6,9 +6,14 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
+    <script>
+      document.documentElement.setAttribute('data-theme',
+        localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    </script>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <script src="http://use.typekit.net/nra6zxt.js"></script>
+    <script src="https://use.typekit.net/nra6zxt.js"></script>
     <script src="{{ "/js/jets.min.js" | prepend: site.baseurl }}"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript">
@@ -66,9 +71,21 @@
             });
         }
 
+        function themeClick(e) {
+            e.preventDefault();
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            e.target.innerHTML = next === 'dark' ? '&#9788;' : '&#9790;';
+        }
+
   		window.onload = function(){
+        var schoolsList = document.querySelector(".schools-list"),
+            themeToggle = document.getElementById("themeToggle");
         document.getElementById("menuIcon").addEventListener( 'click' , menuClick );
-        document.querySelector(".schools-list").addEventListener( 'click', schoolClick );
+        if (schoolsList) schoolsList.addEventListener( 'click', schoolClick );
+        themeToggle.addEventListener( 'click', themeClick );
+        if (document.documentElement.getAttribute('data-theme') === 'dark') themeToggle.innerHTML = '&#9788;';
 	    }
     </script>
 </head>
